@@ -10,7 +10,14 @@ export const Demo = () => {
             Genzeon's NLP
           </h4>
           <div>
-            <button className="btn-primary">Try Demo</button>
+            <a
+              href="https://www.hip.one"
+              className="btn-primary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Try Demo
+            </a>
           </div>
         </div>
       </div>
