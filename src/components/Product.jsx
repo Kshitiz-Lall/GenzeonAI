@@ -4,7 +4,7 @@ import image from "../assets/image.png";
 export const Product = () => {
   return (
     <div>
-      <div className="px-4 lg:px-14 max-w-screen-2xl mx-auto my-8">
+      <div className="px-4 lg:px-14 max-w-screen-2xl mx-auto my-8" id="product">
         <div className="md:w-11/12 mx-auto flex flex-col md:flex-row justify-between items-center gap-12">
           <div>
             <img src={image} alt="" className="w-400" />

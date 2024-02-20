@@ -13,8 +13,8 @@ function App() {
       <Navbar />
       <Home />
       <Service />
-      <About />
       <Product />
+      <About />
       <Demo />
       <FooterComponent />
     </>

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import logo from "../assets/react.svg";
+import { Link } from "react-scroll";
 
 export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -29,7 +30,7 @@ export const Navbar = () => {
     { link: "Service", path: "service" },
     { link: "Product", path: "product" },
     { link: "About", path: "about" },
-    { link: "FAQ", path: "faq" },
+    { link: "Try Demo", path: "demo" },
   ];
   return (
     <>
@@ -55,15 +56,15 @@ export const Navbar = () => {
 
             <ul className={`md:flex space-x-12 ${isMenuOpen ? "" : "hidden"}`}>
               {navItems.map(({ link, path }) => (
-                <li
-                  key={path}
+                <Link
+                  to={path}
                   spy={true}
                   smooth={true}
                   offset={-100}
                   className="block text-base text-gray900 hover:text-primaryBlue first:font-medium"
                 >
                   <a href={`#${path}`}>{link}</a>
-                </li>
+                </Link>
               ))}
             </ul>
           </div>
