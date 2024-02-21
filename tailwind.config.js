@@ -1,4 +1,3 @@
-/** @type {import('tailwindcss').Config} */
 export default {
   content: [
     "./index.html",
@@ -14,6 +13,9 @@ export default {
         primaryBlueDark: "#2e3894",
         neutralGrey: "#717171",
         grey900: "#18191f",
+        lightBlue: "#a496eb", // Light Blue
+        mediumBlue: "#4682b4", // Medium Blue
+        darkBlue: "#00008b",   // Dark Blue
       },
     },
   },

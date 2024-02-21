@@ -1,5 +1,10 @@
 import React from "react";
+import ModuleCard from "./ModuleCard";
 import image from "../assets/image.png";
+import clinicalLogo from "../assets/HIP Clinical Module Coloured.svg";
+import connectLogo from "../assets/HIP Connect Module Coloured.svg";
+import financeLogo from "../assets/HIP Finance Module Coloured.svg";
+import operationLogo from "../assets/HIP Operations Coloured.svg";
 
 export const Service = () => {
   const modules = [
@@ -8,42 +13,27 @@ export const Service = () => {
       title: "module one",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.",
-      image: "/src/assets/image.png",
+      image: image,
+      badgeTitles: ["title1", "title2"],
+      colors: ["bg-purple-500", "bg-blue-500"],
     },
     {
       id: 2,
       title: "module two",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.",
-      image: "/src/assets/image.png",
+      image: image,
+      badgeTitles: ["title3", "title4"],
+      colors: ["bg-green-500", "bg-yellow-500"],
     },
     {
       id: 3,
       title: "module three",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.",
-      image: "/src/assets/image.png",
-    },
-    {
-      id: 4,
-      title: "module four",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.",
-      image: "/src/assets/image.png",
-    },
-    {
-      id: 5,
-      title: "module five",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.",
-      image: "/src/assets/image.png",
-    },
-    {
-      id: 6,
-      title: "module six",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.",
-      image: "/src/assets/image.png",
+      image: image,
+      badgeTitles: ["title5", "title6", "title6", "title6"],
+      colors: ["bg-red-500", "bg-indigo-500", "bg-indigo-500", "bg-indigo-500"],
     },
   ];
 
@@ -55,10 +45,10 @@ export const Service = () => {
         </h2>
         <p className="text-neutralGrey">We have been working</p>
         <div className="my-12 flex flex-wrap justify-between items-center gap-8">
-          <img src={image} alt="" className="w-16" />
-          <img src={image} alt="" className="w-16" />
-          <img src={image} alt="" className="w-16" />
-          <img src={image} alt="" className="w-16" />
+          <img src={clinicalLogo} alt="" className="w-16" />
+          <img src={connectLogo} alt="" className="w-16" />
+          <img src={operationLogo} alt="" className="w-16" />
+          <img src={financeLogo} alt="" className="w-16" />
         </div>
       </div>
 
@@ -74,19 +64,15 @@ export const Service = () => {
 
       {/* Module Cards */}
       <div className="mt-14 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:w-11/12 mx-auto gap-12">
-        {modules.map((modules) => (
-          <div
-            key={modules.id}
-            className="px-4 py-8 text-center md:w-[300px] mx-auto md:h-80 rounded-md shadow cursor-pointer hover:-translate-y-6 hover:border-b-4 hover:border-indigo-700 transition-all duration-300 flex-col items-center justify-center h-full"
-          >
-            <div className="bg-[#E8F5E9] h-14 w-14 mx-auto rounded-tl-3xl rounded-br-3xl">
-              <img src={modules.image} alt="" className="w-14 -ml-5" />
-            </div>
-            <h4 className="text-2xl font-bold text-neutralGrey mb-2 px-2">
-              {modules.title}
-            </h4>
-            <p className="text-sm text-neutralGray">{modules.description}</p>
-          </div>
+        {modules.map((module) => (
+          <ModuleCard
+            key={module.id}
+            title={module.title}
+            description={module.description}
+            image={module.image}
+            badgeTitles={module.badgeTitles} // Pass badge titles as a prop
+            colors={module.colors} // Pass colors as a prop
+          />
         ))}
       </div>
     </div>
