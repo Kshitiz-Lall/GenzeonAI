@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion"; // Import motion from framer-motion
 import { Carousel } from "flowbite-react";
 import image from "../assets/image.png";
-import laptop from "../assets/laptop.svg";
+import laptop from "../assets/firmware.svg";
 
 export const Home = () => {
   return (
@@ -16,16 +16,29 @@ export const Home = () => {
               transition={{ duration: 1 }} // Set transition duration to 1 second
               className="text-center"
             >
-              <h1 className="text-5xl font-bold text-primaryBlue mb-4">Welcome to Our Website</h1>
-              <p className="text-lg text-neutralGrey mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vehicula sagittis est, id convallis mauris vehicula ac.</p>
-              <p className="text-lg text-primaryBlue mb-8">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+              <h1 className="text-5xl font-bold text-primaryBlue mb-4">
+                Welcome to Our Website
+              </h1>
+              <p className="text-lg text-neutralGrey mb-4">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                vehicula sagittis est, id convallis mauris vehicula ac.
+              </p>
+              <p className="text-lg text-primaryBlue mb-8">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                quae ab illo inventore veritatis et quasi architecto beatae
+                vitae dicta sunt explicabo.
+              </p>
               <button className="btn-primary">Get Started</button>
             </motion.div>
             <motion.img
               src={laptop}
               alt="Laptop"
               className="mx-auto md:mx-0 md:w-3/4"
-              animate={{ y: [0, -5, 0], transition: { duration: 2, repeat: Infinity } }} // Bounce animation with duration of 2 seconds
+              animate={{
+                y: [0, -5, 0],
+                transition: { duration: 2, repeat: Infinity },
+              }} // Bounce animation with duration of 2 seconds
             />
           </div>
         </div>

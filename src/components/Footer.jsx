@@ -1,6 +1,6 @@
 import React from "react";
 import { Footer } from "flowbite-react";
-import logo from "../assets/image.png";
+import logo from "../assets/HIP Logo Horizontal.svg";
 
 export const FooterComponent = () => {
   return (
@@ -12,7 +12,7 @@ export const FooterComponent = () => {
               href="https://hip.one"
               src={logo}
               alt="HIP Logo"
-              name="HIP One"
+              className="w-45"
             />
             <Footer.LinkGroup>
               <Footer.Link
