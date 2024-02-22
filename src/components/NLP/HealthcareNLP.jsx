@@ -60,7 +60,7 @@ export const HealthcareNLP = () => {
         <div className="mt-20 w-screen mx-auto min-h-screen h-screen flex flex-col ">
           <div className="bg-HealthcarenlpColor text-white py-20 sm:py-40 md:py-60 flex flex-col justify-center items-center">
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4">
-              Healthcare Large Language Models (LLMs)
+              Healthcare Natural Language Processing (NLP)
             </h1>
             <p className="text-lg sm:text-xl mb-8 max-w-screen-md">
               Advanced Language Processing Systems Tailored for the Healthcare

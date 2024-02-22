@@ -94,7 +94,7 @@ export const ClinicalNLP = () => {
         <div className="mt-20 w-screen mx-auto min-h-screen h-screen flex flex-col ">
           <div className="bg-ClinicalnlpColor text-white py-20 sm:py-40 md:py-60 flex flex-col justify-center items-center">
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4">
-              Clinical NLP
+              Clinical Natural Language Processing (NLP)
             </h1>
             <p className="text-lg sm:text-xl mb-8 max-w-screen-md">
               Propelling Clinical Natural Language Processing (NLP) Forward to

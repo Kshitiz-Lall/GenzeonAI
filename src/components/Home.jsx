@@ -3,20 +3,22 @@ import { motion } from "framer-motion"; // Import motion from framer-motion
 import { Carousel } from "flowbite-react";
 import image from "../assets/image.png";
 import laptop from "../assets/firmware.svg";
+import "./style.css";
 
 export const Home = () => {
   return (
     <>
-      <div className="bg-fadeSilver" id="home">
+      <div className="home-container" id="home">
         <div className="px-4 lg:px-14 max-w-screen-2xl mx-auto min-h-screen h-screen flex flex-col justify-center gap-8">
           <div className="grid grid-cols-3 grid-rows-1 md:grid-cols-3 gap-8 items-center">
             {/* Card 1 */}
             <div className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
               <a href="#">
-                <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                <h5 className="mb-2 text-2xl font-bold tracking-tight text-primaryBlue dark:text-white">
                   Clinical NLP
                 </h5>
               </a>
+              <div class="border-t border-gray-300 my-4"></div>
               <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
                 Clinical Natural Language Processing (NLP) techniques to
                 seamlessly combine various sources of medical data, including
@@ -48,10 +50,11 @@ export const Home = () => {
             {/* Card 2 */}
             <div className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
               <a href="#">
-                <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                <h5 className="mb-2 text-2xl font-bold tracking-tight text-primaryBlue dark:text-white">
                   Biomedical NLP
                 </h5>
               </a>
+              <div class="border-t border-gray-300 my-4"></div>
               <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
                 Biomedical NLP aims to enhance language processing capabilities
                 to comprehend a wide array of biomedical data sources such as
@@ -83,10 +86,11 @@ export const Home = () => {
             {/* Card 3 */}
             <div className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
               <a href="#">
-                <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                <h5 className="mb-2 text-2xl font-bold tracking-tight text-primaryBlue dark:text-white">
                   Healthcare NLP
                 </h5>
               </a>
+              <div class="border-t border-gray-300 my-4"></div>
               <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
                 Healthcare LLMs are advanced language processing systems
                 tailored for healthcare, adept at understanding & analyzing
@@ -119,10 +123,11 @@ export const Home = () => {
               {/* Card 4 */}
               <div className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                 <a href="#">
-                  <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                  <h5 className="mb-2 text-2xl font-bold tracking-tight text-primaryBlue dark:text-white">
                     Gen Expression
                   </h5>
                 </a>
+                <div class="border-t border-gray-300 my-4"></div>
                 <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
                   a specialized regular expression for extracting complex fields
                   from medical records. It efficiently parses intricate medical
