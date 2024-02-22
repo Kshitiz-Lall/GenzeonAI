@@ -13,8 +13,11 @@ export default {
         primaryBlueDark: "#2e3894",
         neutralGrey: "#717171",
         grey900: "#18191f",
-        lightBlue: "#a496eb", // Light Blue
-        mediumBlue: "#4682b4", // Medium Blue
+        lightBlue: "#e8f1ff", // Light Blue
+        ClinicalnlpColor: "#4A3AFF",
+        BiomedicalnlpColor: "#28235C",
+        HealthcarenlpColor: "#5E00FF",
+        GenexpressionnlpColor: "#008AED",
         darkBlue: "#00008b",   // Dark Blue
       },
     },

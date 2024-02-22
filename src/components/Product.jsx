@@ -1,6 +1,7 @@
 import React from "react";
 import image from "../assets/image.png";
 import analysisImage from "../assets/instant-analysis.svg";
+import { Navbar } from "./Navbar";
 
 export const Product = () => {
   return (
@@ -40,25 +41,6 @@ export const Product = () => {
               nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
               reprehenderit.
             </p>
-          </div>
-          {/* Stats */}
-          <div className="md:w-1/2 mx-auto flex sm:flex-row flex-col sm:items-center justify-around gap-12">
-            <div className="space-y-8">
-              <div className="flex items-center gap-4">
-                <img src={image} alt="" className="w-20" />
-                <img src={image} alt="" className="w-20" />
-                <img src={image} alt="" className="w-20" />
-                <img src={image} alt="" className="w-20" />
-                <img src={image} alt="" className="w-20" />
-              </div>
-              <div className="flex items-center gap-4">
-                <img src={image} alt="" className="w-20" />
-                <img src={image} alt="" className="w-20" />
-                <img src={image} alt="" className="w-20" />
-                <img src={image} alt="" className="w-20" />
-                <img src={image} alt="" className="w-20" />
-              </div>
-            </div>
           </div>
         </div>
       </div>

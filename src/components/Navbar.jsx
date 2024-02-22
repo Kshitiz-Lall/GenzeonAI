@@ -26,11 +26,11 @@ export const Navbar = () => {
   }, []);
 
   const navItems = [
-    { link: "Home", path: "home" },
-    { link: "Service", path: "service" },
-    { link: "Product", path: "product" },
-    { link: "About", path: "about" },
-    { link: "Try Demo", path: "demo" },
+    // { link: "Home", path: "home" },
+    // { link: "Service", path: "service" },
+    // { link: "Product", path: "product" },
+    // { link: "About", path: "about" },
+    // { link: "Try Demo", path: "demo" },
   ];
   return (
     <>

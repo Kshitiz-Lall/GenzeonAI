@@ -38,8 +38,8 @@ export const Service = () => {
   ];
 
   return (
-    <div className="md:px-14 px-4 py-16 max-w-screen-2xl mx-auto" id="service">
-      <div className="text-center my-8">
+    <div className="md:px-14 px-4 py-16 max-w-screen-2xl mx-auto h-screen" id="service">
+      {/* <div className="text-center my-8">
         <h2 className="text-4xl text-fadeGrey font-semibold mb-2">
           About Service text
         </h2>
@@ -50,10 +50,10 @@ export const Service = () => {
           <img src={operationLogo} alt="" className="w-16" />
           <img src={financeLogo} alt="" className="w-16" />
         </div>
-      </div>
+      </div> */}
 
       {/* Service Cards */}
-      <div className="mt-20 md:w-1/2 mx-auto text-center">
+      <div className="mt-20 md:w-1/2 mx-auto text-center ">
         <h2 className="text-4xl text-fadeGrey font-semibold mb-3">
           Some Text about reliability
         </h2>
