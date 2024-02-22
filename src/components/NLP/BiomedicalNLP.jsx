@@ -1,8 +1,8 @@
 import React from "react";
 import ModuleCard from "../ModuleCard";
+import FAQ from "../FAQ";
 
 export const BiomedicalNLP = () => {
-
   const modules = [
     {
       id: 1,
@@ -59,8 +59,14 @@ export const BiomedicalNLP = () => {
       <div className="mx-auto text-center">
         <div className="mt-20 w-screen mx-auto min-h-screen h-screen flex flex-col ">
           <div className="bg-BiomedicalnlpColor text-white py-20 sm:py-40 md:py-60 flex flex-col justify-center items-center">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4">Biomedical NLP</h1>
-            <p className="text-lg sm:text-xl mb-8">We offer solutions to all your needs.</p>
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4">
+              Biomedical Natural Language Processing (NLP)
+            </h1>
+            <p className="text-lg sm:text-xl mb-8 max-w-screen-md">
+              Cutting-Edge Models for Grasping Biomedical Research, Clinical
+              Trial Protocols, Patent Documentation, Grant Applications, and
+              Regulatory Filings
+            </p>
           </div>
 
           <div className=" mt-5 mb-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
@@ -76,7 +82,6 @@ export const BiomedicalNLP = () => {
             ))}
           </div>
           <div className="px-4 lg:px-14 w-screen mx-auto bg-fadeSilver py-16">
-
             <p className="text-sm text-neutralGrey mb-8">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -85,9 +90,11 @@ export const BiomedicalNLP = () => {
               reprehenderit.
             </p>
           </div>
+          <div className="px-4 lg:px-14 w-screen mx-auto bg-fadeSilver py-16">
+            {/* <FAQ /> */}
+          </div>
         </div>
       </div>
     </>
-
   );
 };

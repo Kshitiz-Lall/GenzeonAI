@@ -1,21 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
-const FAQ = () => {
+const FAQ = ({ faqData }) => {
   // State to keep track of which question is currently open
   const [activeQuestion, setActiveQuestion] = useState(null);
-
-  // FAQ data
-  const faqData = [
-    {
-      question: 'What is Tailwind CSS?',
-      answer: 'Tailwind CSS is a utility-first CSS framework for building custom designs quickly.',
-    },
-    {
-      question: 'How do I install Tailwind CSS?',
-      answer: 'You can install Tailwind CSS via npm or yarn. Check the official documentation for installation instructions.',
-    },
-    // Add more FAQ items as needed
-  ];
 
   // Function to toggle the active question
   const toggleQuestion = (index) => {
@@ -24,7 +11,9 @@ const FAQ = () => {
 
   return (
     <div className="max-w-3xl mx-auto">
-      <h1 className="text-3xl font-semibold mb-4">Frequently Asked Questions</h1>
+      <h1 className="text-3xl font-semibold mb-4">
+        Frequently Asked Questions
+      </h1>
       <div className="space-y-4">
         {faqData.map((faq, index) => (
           <div key={index} className="border-b pb-4">
@@ -37,8 +26,9 @@ const FAQ = () => {
               </h2>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className={`h-6 w-6 transition-transform transform ${activeQuestion === index ? '-rotate-180' : 'rotate-0'
-                  }`}
+                className={`h-6 w-6 transition-transform transform ${
+                  activeQuestion === index ? "-rotate-180" : "rotate-0"
+                }`}
                 viewBox="0 0 20 20"
                 fill="currentColor"
                 onClick={() => toggleQuestion(index)}
