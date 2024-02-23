@@ -1,7 +1,8 @@
 import { AnimatePresence, motion } from "framer-motion";
 import React, { useState } from "react";
+import logo from "../assets/cloud-deploy-svgrepo-com.svg";
 
-const ModuleCard = ({ title, description, image, badgeTitles, colors }) => {
+const ClinicalModuleCard = ({ title, description, image, badgeTitles, colors }) => {
   const [isFlipped, setIsFlipped] = useState(false);
 
   const handleMouseEnter = () => {
@@ -24,7 +25,7 @@ const ModuleCard = ({ title, description, image, badgeTitles, colors }) => {
             animate={{ opacity: 1 }}
           >
             <div className="bg-lightBlue h-14 w-14 mx-auto rounded-tl-3xl rounded-br-3xl ">
-              <img src={image} alt="" className="w-14 -ml-5" />
+              <img src={logo} alt="" className="w-14" />
             </div>
             <h4 className="text-xl font-bold text-black mb-2 px-2">{title}</h4>
             <p className="text-md text-fadeGrey">{description}</p>
@@ -56,4 +57,4 @@ const ModuleCard = ({ title, description, image, badgeTitles, colors }) => {
   );
 };
 
-export default ModuleCard;
+export default ClinicalModuleCard;

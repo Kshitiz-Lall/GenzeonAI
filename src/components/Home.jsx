@@ -20,16 +20,16 @@ export const Home = () => {
               </a>
               <div class="border-t border-gray-300 my-4"></div>
               <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                Clinical Natural Language Processing (NLP) techniques to
-                seamlessly combine various sources of medical data, including
-                patient narratives, pathology reports, radiological findings,
-                laboratory results, and other clinical documentation.
+                Clinical Natural Language Processing (NLP) techniques are used to
+                seamlessly combine various sources of Medical data, including
+                Physician orders, Pathology reports, Radiological findings,
+                Laboratory results, and other Clinical documentation.
               </p>
               <a
                 href="/clinical-nlp"
                 className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
               >
-                Read more
+                Explore
                 <svg
                   className="rtl:rotate-180 w-3.5 h-3.5 ms-2"
                   aria-hidden="true"
@@ -51,21 +51,18 @@ export const Home = () => {
             <div className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
               <a href="#">
                 <h5 className="mb-2 text-2xl font-bold tracking-tight text-primaryBlue dark:text-white">
-                  Biomedical NLP
+                  NERMed NLP
                 </h5>
               </a>
               <div class="border-t border-gray-300 my-4"></div>
               <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                Biomedical NLP aims to enhance language processing capabilities
-                to comprehend a wide array of biomedical data sources such as
-                research literature, clinical trial protocols, patent documents,
-                grant proposals, and regulatory filings.
+                NERMed is equipped with state-of-the-art algorithms to efficiently recognize nuanced details within healthcare documentation such as descriptions of items or services, manufacturer names, product names and numbers, and Supplier Price List (PL) amounts.
               </p>
               <a
                 href="/biomedical-nlp"
                 className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
               >
-                Read more
+                Explore
                 <svg
                   className="rtl:rotate-180 w-3.5 h-3.5 ms-2"
                   aria-hidden="true"
@@ -87,7 +84,7 @@ export const Home = () => {
             <div className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
               <a href="#">
                 <h5 className="mb-2 text-2xl font-bold tracking-tight text-primaryBlue dark:text-white">
-                  Healthcare NLP
+                  Healthcare LLM
                 </h5>
               </a>
               <div class="border-t border-gray-300 my-4"></div>
@@ -101,7 +98,7 @@ export const Home = () => {
                 href="/healthcare-nlp"
                 className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
               >
-                Read more
+                Explore
                 <svg
                   className="rtl:rotate-180 w-3.5 h-3.5 ms-2"
                   aria-hidden="true"
@@ -121,41 +118,24 @@ export const Home = () => {
             </div>
             <div className="col-start-2">
               {/* Card 4 */}
-              <div className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+              <div className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-700">
                 <a href="#">
                   <h5 className="mb-2 text-2xl font-bold tracking-tight text-primaryBlue dark:text-white">
-                    Gen Expression
+                    GenRexs
                   </h5>
                 </a>
-                <div class="border-t border-gray-300 my-4"></div>
+                <div className="border-t border-gray-300 my-4"></div>
                 <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                  a specialized regular expression for extracting complex fields
-                  from medical records. It efficiently parses intricate medical
-                  data structures, enabling precise extraction of information
-                  from diverse healthcare documents.
+                  With GenRexs, organizations can streamline their Data extraction workflows, unlock valuable fields and make informed decisions with ease.
                 </p>
-                <a
-                  href={`/genexpression`}
-                  className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                >
-                  Read more
-                  <svg
-                    className="rtl:rotate-180 w-3.5 h-3.5 ms-2"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 14 10"
-                  >
-                    <path
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M1 5h12m0 0L9 1m4 4L9 9"
-                    />
+                <a href={`/genexpression`} className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                  Explore
+                  <svg className="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
                   </svg>
                 </a>
               </div>
+
             </div>
           </div>
         </div>
